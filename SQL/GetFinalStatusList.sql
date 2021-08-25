@@ -1,0 +1,1 @@
+SELECT a.name FROM ref_status_up a WHERE a.is_final = 'Y'

@@ -1,0 +1,1 @@
+SELECT a.amount FROM balance a WHERE a.company_id = ${company_id} AND a.ccy_id = (SELECT a1.id FROM ref_ccy a1 WHERE a1.ccy = '${CurrencyOpl}')

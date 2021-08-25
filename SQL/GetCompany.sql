@@ -1,0 +1,1 @@
+SELECT a.id as 'company_id', a.`status`, a.public_key FROM company a WHERE a.edrpou = ${edrpou}

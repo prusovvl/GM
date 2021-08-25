@@ -1,0 +1,1 @@
+UPDATE balance SET amount = amount - ${Amount}, last_upd = NOW() WHERE company_id = ${company_id} AND ccy_id = ${Currency}

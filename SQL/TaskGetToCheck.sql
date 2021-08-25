@@ -1,0 +1,2 @@
+SELECT a.TransferUID, a.ID, a.company_id, a.ccy_id, a.ccy_opl_id, a.Amount, a.AmountOpl, a.up_status, a.send_status FROM transactions a WHERE a.OrderDateTime BETWEEN DATE_SUB(CURDATE(), INTERVAL 60 DAY) AND NOW() AND 
+a.OrderMonth IN (MONTH(DATE_SUB(CURDATE(), INTERVAL 60 DAY)), MONTH(CURDATE())) AND a.send_status in (5, 7); 
